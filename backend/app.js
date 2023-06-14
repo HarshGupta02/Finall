@@ -1,7 +1,9 @@
 const express = require("express")
 const cors = require("cors");
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "https://6489a37715001c127d811a4f--mellow-babka-33bc13.netlify.app"
+}));
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
