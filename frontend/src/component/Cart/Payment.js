@@ -56,7 +56,7 @@ const Payment = () => {
           },
         };
         const {data} = await axios.post(
-          `/api/v1/payment/process`,
+          `https://ecommerceprojectserver.onrender.com/api/v1/payment/process`,
           paymentData,
           config
         );
