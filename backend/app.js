@@ -23,10 +23,10 @@ const user = require("./userRoute.js");
 const order = require("./orderRoutes.js");
 const payment = require("./paymentRoute.js");
 
-app.use(`https://ecommerceprojectserver.onrender.com/api/v1`, product);
-app.use(`https://ecommerceprojectserver.onrender.com/api/v1`, user);
-app.use(`https://ecommerceprojectserver.onrender.com/api/v1`, order);
-app.use(`https://ecommerceprojectserver.onrender.com/api/v1`, payment);
+app.use(`/api/v1`, product);
+app.use(`/api/v1`, user);
+app.use(`/api/v1`, order);
+app.use(`/api/v1`, payment);
 
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
