@@ -48,7 +48,7 @@ function App() {
   const BASE_URL = "https://backendserver-pnui.onrender.com";
 
   async function getStripeApiKey() {
-    const {data} = await axios.get(`${BASE_URL}/api/v1/stripeapikey`);
+    const {data} = await axios.get(`/api/v1/stripeapikey`);
     setStripeApiKey(data.stripeApiKey);
   }
 
