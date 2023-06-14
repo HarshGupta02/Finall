@@ -23,7 +23,6 @@ import {
  } from "../constants/OrderConstants";
 
  import axios from "axios";
- const BASE_URL = "https://backendserver-pnui.onrender.com";
 
  export const createOrder = (order) => async (dispatch) => {
     try {

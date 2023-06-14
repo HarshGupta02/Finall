@@ -40,7 +40,6 @@ import { CLEAR_ERRORS,
     USER_DETAILS_SUCCESS,
 } from "../constants/userConstants";
 import axios from "axios";
-const BASE_URL = "https://backendserver-pnui.onrender.com";
 
 export const login = (email, password) => async (dispatch) => {
     try {

@@ -45,7 +45,6 @@ import ProtectedRoute from './component/Route/ProtectedRoute';
 function App() {
   const {isAuthenticated, user} = useSelector((state) => state.user);
   const [stripeApiKey, setStripeApiKey] = useState("");
-  const BASE_URL = "https://backendserver-pnui.onrender.com";
 
   async function getStripeApiKey() {
     const {data} = await axios.get(`/api/v1/stripeapikey`);

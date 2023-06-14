@@ -31,7 +31,6 @@ import {
     DELETE_REVIEW_SUCCESS,
     CLEAR_ERRORS
 } from "../constants/productConstants";
-const BASE_URL = "https://backendserver-pnui.onrender.com";
 
 export const getProduct = (keyword = "", currentPage = 1, price = [0,25000], category, ratings = 0) => async (dispatch) => {
     try {

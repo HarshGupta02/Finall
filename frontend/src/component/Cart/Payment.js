@@ -28,7 +28,6 @@ const Payment = () => {
     const elements = useElements();
     const payBtn = useRef(null);
     const navigate = useNavigate();
-    const BASE_URL = "https://backendserver-pnui.onrender.com";
 
     const {shippingInfo, cartItems} = useSelector((state) => state.cart);
     const {user} = useSelector((state) => state.user);
