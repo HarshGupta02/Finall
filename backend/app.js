@@ -1,9 +1,7 @@
 const express = require("express")
 const cors = require("cors");
 const app = express();
-app.use(cors({
-    origin: "https://6489a37715001c127d811a4f--mellow-babka-33bc13.netlify.app"
-}));
+app.use(cors());
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
@@ -23,10 +21,10 @@ const user = require("./userRoute.js");
 const order = require("./orderRoutes.js");
 const payment = require("./paymentRoute.js");
 
-app.use(`/api/v1`, product);
-app.use(`/api/v1`, user);
-app.use(`/api/v1`, order);
-app.use(`/api/v1`, payment);
+app.use(`https://ecommerceprojectserver.onrender.com/api/v1`, product);
+app.use(`https://ecommerceprojectserver.onrender.com/api/v1`, user);
+app.use(`https://ecommerceprojectserver.onrender.com/api/v1`, order);
+app.use(`https://ecommerceprojectserver.onrender.com/api/v1`, payment);
 
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 

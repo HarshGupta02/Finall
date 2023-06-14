@@ -5,6 +5,6 @@ const router = express.Router();
 // const {isAuthenticatedUser} = require("../middleware/auth");
 const {isAuthenticatedUser} = require("./auth.js");
 
-router.route("/payment/process").post(isAuthenticatedUser, processPayment);
-router.route("/stripeapikey").get(isAuthenticatedUser, sendStripeApiKey);
+router.route("https://ecommerceprojectserver.onrender.com/payment/process").post(isAuthenticatedUser, processPayment);
+router.route("https://ecommerceprojectserver.onrender.com/stripeapikey").get(isAuthenticatedUser, sendStripeApiKey);
 module.exports = router;
