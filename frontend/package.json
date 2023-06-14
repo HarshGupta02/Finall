@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy" : "https://ecommerceprojectserver.onrender.com",
+  "proxy" : "https://ecom-mbvn.onrender.com",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/data-grid": "^4.0.0-alpha.37",
